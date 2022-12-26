@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const PageTitle = () => {
   const title = 'Laiko Studio';
   return (
@@ -7,7 +5,7 @@ const PageTitle = () => {
       <div className="row py-3">
         <div className="col text-center text-reset text-decoration-none display-5">
           <a className="px-3 img-responsive pull-right" href="/">
-            <Image src="/logo.webp" width="300" height="120" alt="" />
+            <img src="/logo.webp" width="300" height="120" alt="" />
           </a>
           {/* {title} */}
         </div>

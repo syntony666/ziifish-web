@@ -1,7 +1,6 @@
 import { Inter } from '@next/font/google';
 import 'bootstrap/dist/css/bootstrap.css';
 import Head from 'next/head';
-import Image from 'next/image';
 import TopNavBar from '../component/top-navbar';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Link from 'next/link';
@@ -111,7 +110,7 @@ export default function Home() {
         <div className="card my-3">
           <div className="row g-0 bg-transparent">
             <div className="col-sm-3">
-              <Image
+              <img
                 className="card-image-top img-thumbnail border-0"
                 src={intro.avatar}
                 width={300}
@@ -121,15 +120,15 @@ export default function Home() {
             </div>
             <div className="col-sm-7 py-1">
               <div className="h-25">
-                <Image src={intro.logo} height={100} width={180} alt="" />
+                <img src={intro.logo} height={100} width={180} alt="" />
                 <Link href={intro.twitch}>
-                  <Image className="ms-4 mx-2 align-bottom" src="/twitch.svg" height={50} width={50} alt="" />
+                  <img className="ms-4 mx-2 align-bottom" src="/twitch.svg" height={50} width={50} alt="" />
                 </Link>
                 <Link href={intro.twitter}>
-                  <Image className="mx-2 align-bottom" src="/twitter.svg" height={50} width={50} alt="" />
+                  <img className="mx-2 align-bottom" src="/twitter.svg" height={50} width={50} alt="" />
                 </Link>
                 <Link href={intro.youtube}>
-                  <Image className="mx-2 align-bottom" src="/youtube.svg" height={50} width={50} alt="" />
+                  <img className="mx-2 align-bottom" src="/youtube.svg" height={50} width={50} alt="" />
                 </Link>
               </div>
               <h3 className="h-75 lh-base d-flex align-items-center">{intro.description}</h3>
