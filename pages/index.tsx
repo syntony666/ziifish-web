@@ -29,30 +29,30 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="col-lg-7 py-2 ps-3 border-start border-secondary">
+            <div className="col-lg-7 py-2 border-start border-secondary">
               <div className="row">
-                <div className="col-xxl-3">
+                <div className="col-sm-auto ms-3">
                   <Image src={intro.logoImg} height={100} width={180} alt="" />
                 </div>
-                <div className="col-xxl-5 mt-3 d-flex align-items-end">
+                <div className="col-sm-8 mt-3 d-flex align-items-end">
                   {intro.twitchUrl && (
                     <Link href={intro.twitchUrl}>
-                      <Image className="mx-2" src="/twitch.svg" height={50} width={50} alt="" />
+                      <Image className="mx-2 img-fluid" src="/twitch.svg" height={50} width={50} alt="" />
                     </Link>
                   )}
                   {intro.twitterUrl && (
                     <Link href={intro.twitterUrl}>
-                      <Image className="mx-2" src="/twitter.svg" height={50} width={50} alt="" />
+                      <Image className="mx-2 img-fluid" src="/twitter.svg" height={50} width={50} alt="" />
                     </Link>
                   )}
                   {intro.youtubeUrl && (
                     <Link href={intro.youtubeUrl}>
-                      <Image className="mx-2" src="/youtube.svg" height={50} width={50} alt="" />
+                      <Image className="mx-2 img-fluid" src="/youtube.svg" height={50} width={50} alt="" />
                     </Link>
                   )}
                   {intro.facebookUrl && (
                     <Link href={intro.facebookUrl}>
-                      <Image className="mx-2" src="/facebook.svg" height={50} width={50} alt="" />
+                      <Image className="mx-2 img-fluid" src="/facebook.svg" height={50} width={50} alt="" />
                     </Link>
                   )}
                   {intro.instagramUrl && (
