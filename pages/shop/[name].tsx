@@ -1,3 +1,4 @@
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import NoProduct from '../../component/no-product';
@@ -34,3 +35,14 @@ export default function ShopDetail() {
     );
   }
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = introData.map((intro) => ({
+    params: { name: intro.id },
+  }));
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  return { props: {} };
+};
