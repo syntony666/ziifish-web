@@ -1,9 +1,7 @@
 export interface IntroModel {
+    id: string
     name: string,
     description: JSX.Element,
-    avatarImg: string,
-    logoImg: string,
-    shopUrl: string,
     twitterUrl?: string,
     twitchUrl?: string,
     youtubeUrl?: string,

@@ -6,14 +6,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <div className="container-fluid bg-dark">
+      <body className="container-fluid bg-dark">
         <Title />
-        <div className="container mb-3">
+        <div className="container mb-3" style={{ minHeight: '80vh' }}>
           <Main />
           <NextScript />
         </div>
-        <Footer />
-      </div>
+      </body>
+      <Footer />
     </Html>
   );
 }

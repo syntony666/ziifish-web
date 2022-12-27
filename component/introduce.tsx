@@ -12,7 +12,7 @@ export default function Introduce() {
             <div className="col-lg-3">
               <Image
                 className="card-image-top img-thumbnail border-0 bg-transparent"
-                src={intro.avatarImg}
+                src={`/intro/${intro.id}-avatar.webp`}
                 width={300}
                 height={300}
                 alt=""
@@ -21,7 +21,7 @@ export default function Introduce() {
             <div className="col-lg-7 py-2 border-start border-secondary">
               <div className="row">
                 <div className="col-sm-auto ms-3">
-                  <Image src={intro.logoImg} height={100} width={180} alt="" />
+                  <Image src={`/intro/${intro.id}-logo.webp`} height={100} width={180} alt="" />
                 </div>
                 <div className="col-sm-8 mt-3 d-flex align-items-end">
                   {intro.twitchUrl && (
@@ -54,7 +54,7 @@ export default function Introduce() {
               <h3 className="row mx-2 mt-3 lh-base">{intro.description}</h3>
             </div>
             <div className="col-lg-2 mb-3 pe-3 d-flex align-items-end justify-content-end">
-              <Link href={intro.shopUrl}>
+              <Link href={`/shop/${intro.id}`}>
                 <button type="button" className="btn btn-lg btn-success">
                   <i className="bi bi-bag-fill" /> 周邊商品
                 </button>
