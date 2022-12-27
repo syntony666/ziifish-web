@@ -30,11 +30,11 @@ export default function Home() {
               />
             </div>
             <div className="col-lg-7 py-2 ps-3 border-start">
-              <div className="row h-25">
+              <div className="row">
                 <div className="col-lg-3">
                   <Image src={intro.logoImg} height={100} width={180} alt="" />
                 </div>
-                <div className="col-lg-5 d-flex align-items-end">
+                <div className="col-lg-5 mt-3 d-flex align-items-end">
                   {intro.twitchUrl && (
                     <Link href={intro.twitchUrl}>
                       <Image className="mx-2" src="/twitch.svg" height={50} width={50} alt="" />
@@ -62,7 +62,7 @@ export default function Home() {
                   )}
                 </div>
               </div>
-              <h3 className="h-75 lh-base d-flex align-items-center">{intro.description}</h3>
+              <h3 className="row mx-2 mt-3 lh-base">{intro.description}</h3>
             </div>
             <div className="col-sm-2 mb-3 pe-3 d-flex align-items-end justify-content-end">
               <Link href={intro.shopUrl}>
