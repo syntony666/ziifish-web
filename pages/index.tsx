@@ -18,18 +18,18 @@ export default function Home() {
         <meta property="og:title" content={title} key="title" />
       </Head>
       {introList.map((intro) => (
-        <div className="card my-3 bg-light">
+        <div className="card my-3" style={{ backgroundColor: '#95adc7' }}>
           <div className="row g-0 bg-transparent">
             <div className="col-sm-3">
               <Image
-                className="card-image-top img-thumbnail border-0 bg-light"
+                className="card-image-top img-thumbnail border-0 bg-transparent"
                 src={intro.avatarImg}
                 width={300}
                 height={300}
                 alt=""
               />
             </div>
-            <div className="col-lg-7 py-2 ps-3 border-start">
+            <div className="col-lg-7 py-2 ps-3 border-start border-secondary">
               <div className="row">
                 <div className="col-lg-3">
                   <Image src={intro.logoImg} height={100} width={180} alt="" />
