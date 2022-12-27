@@ -7,7 +7,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <div className="bg-dark">
+      <div className="container-fluid bg-dark">
         <Title />
         {/* <TopNavbar /> */}
         <tr />
